@@ -1,0 +1,57 @@
+body {
+	margin: auto;
+	padding-top: 50px;
+	background-color: white;
+	background-image: url("https://cdn.wallpapersafari.com/92/47/6qFs7V.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100vw;
+	height: 100vh;
+	font-family: Arial, Helvetica, sans-serif;
+	align-items: center;
+}
+
+.gridcontainer {
+	display: grid;
+	border: white solid 5px;
+	background-color: lightblue;
+	width: 1000px;
+	margin: auto;
+	padding-bottom: 30px;
+	grid-template-columns: 25% 25% 25% 25%;
+	grid-template-areas:
+		"a a a a"
+		"b b b b"
+		"b b b b"
+		"c c c c";
+}
+
+#userlist {
+	grid-area: a;
+	background-color: lightblue;
+	color: black;
+	text-align: center;
+}
+
+#userdata {
+	grid-area: b;
+	background-color: white;
+	/* background-image: url("https://i.pinimg.com/originals/e6/61/75/e66175e3718ba427547aa7d6e5ab10d8.jpg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover; */
+	padding-bottom: 20px;
+	color: black;
+	text-align: left;
+	padding-left: 50px;
+}
+
+#archive {
+	grid-area: c;
+	padding-top: 30px;
+	background-color: lightblue;
+	color: black;
+	text-align: center;
+	font-size: 24px;
+}

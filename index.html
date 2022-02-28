@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <link rel="stylesheet" href="./src/index.css">
+    <script defer src="./src/index.js"></script>
+</head>
+
+<body onload="startTime()">
+    <div class="gridcontainer">
+        <div id="userlist">
+            <h1>
+                <span id="username">Things To Do Today</span>
+            </h1>
+        </div>
+        <div id="userdata">
+            <div>
+                <h3><span style="background-color: cornflowerblue; padding: 5px; color: white;">Today's date:</span>
+                    <span id="addDate"></span>
+                </h3>
+            </div>
+            <div id='todolist'>
+                <dl>
+                    <dt id='startlist'>
+                        <input type="checkbox">
+                        <input type="text" style="width:600px" placeholder="Add Title Here"><input type="button"
+                            onclick="addNewItem()" id="btnNewitem" value="+">
+                    </dt>
+                    <dd>
+                        <input type="checkbox"><input type="text" style="width:800px" placeholder="Add Task Here">
+                    </dd>
+                    <dd>
+                        <input type="checkbox"><input type="text" id="textbox2" style="width:800px"
+                            placeholder="Add Task Here">
+                    </dd>
+                </dl>
+            </div>
+            <input type="button" id="btnNewlist" value="+ Add New List">
+
+
+        </div>
+
+
+        <div id="archive">
+            <div>Current time:</div>
+            <div id="time">
+            </div>
+
+
+        </div>
+
+</body>
+
+</html>
