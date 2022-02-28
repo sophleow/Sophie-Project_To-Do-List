@@ -24,24 +24,21 @@
                 </h3>
             </div>
             <div id='todolist'>
-                <dl>
-                    <dt id='startlist'>
-                        <input type="checkbox">
-                        <input type="text" style="width:600px" placeholder="Add Title Here"><input type="button"
-                            onclick="addNewItem()" id="btnNewitem" value="+">
-                    </dt>
-                    <dd>
-                        <input type="checkbox"><input type="text" style="width:800px" placeholder="Add Task Here">
-                    </dd>
-                    <dd>
-                        <input type="checkbox"><input type="text" id="textbox2" style="width:800px"
-                            placeholder="Add Task Here">
-                    </dd>
-                </dl>
+                <dt id='startlist'>
+                    <input type="checkbox">
+                    <input type="text" style="width:600px" placeholder="Add Title Here"><input type="button"
+                        onclick="addNewItem(this.id)" id="btnNewitem" value="+">
+                </dt>
+                <dd>
+                    <input type="checkbox"><input type="text" style="width:800px" placeholder="Add Task Here">
+                </dd>
+                <dd>
+                    <input type="checkbox"><input type="text" id="textbox2" style="width:800px"
+                        placeholder="Add Task Here">
+                </dd>
             </div>
+            <br>
             <input type="button" id="btnNewlist" value="+ Add New List">
-
-
         </div>
 
 
