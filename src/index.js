@@ -50,7 +50,10 @@ const addNewList = () => {
 	titleBox.setAttribute("type", "checkbox");
 	let titleBox2 = document.createElement("input");
 	titleBox2.setAttribute("type", "text");
-	titleBox2.setAttribute("placeholder", "Add Title Here");
+	titleBox2.setAttribute(
+		"placeholder",
+		"Add Title Here (eg. Work, School, Home)"
+	);
 	titleBox2.style.width = "600px";
 	let titleBox3 = document.createElement("input");
 	titleBox3.setAttribute("type", "button");
@@ -66,7 +69,10 @@ const addNewList = () => {
 	taskBox1.setAttribute("type", "checkbox");
 	let taskBox2 = document.createElement("input");
 	taskBox2.setAttribute("type", "text");
-	taskBox2.setAttribute("placeholder", "Add Task Here");
+	taskBox2.setAttribute(
+		"placeholder",
+		"Add Task Here (eg. finish homework, buy milk, wash dishes)"
+	);
 	taskBox2.style.width = "800px";
 	createNewListItem.append(taskBox1, taskBox2);
 	createNewListTitle.appendChild(createNewListItem);
@@ -77,7 +83,10 @@ const addNewList = () => {
 
 	let taskBox4 = document.createElement("input");
 	taskBox4.setAttribute("type", "text");
-	taskBox4.setAttribute("placeholder", "Add Task Here");
+	taskBox4.setAttribute(
+		"placeholder",
+		"Add Task Here (eg. finish homework, buy milk, wash dishes)"
+	);
 	taskBox4.style.width = "800px";
 	createNewListItem2.append(taskBox3, taskBox4);
 	createNewListTitle.appendChild(createNewListItem2);
@@ -96,7 +105,10 @@ const addNewItem = (clicked_id) => {
 
 	let inputText = document.createElement("input");
 	inputText.setAttribute("type", "text");
-	inputText.setAttribute("placeholder", "Add Task Here");
+	inputText.setAttribute(
+		"placeholder",
+		"Add Task Here (eg. finish homework, buy milk, wash dishes)"
+	);
 	inputText.style.width = "800px";
 
 	createNewDD.append(inputCheck, inputText);

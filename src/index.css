@@ -15,6 +15,8 @@ body {
 .gridcontainer {
 	display: grid;
 	border: white solid 5px;
+	border-radius: 25px;
+	box-shadow: 5px 5px grey;
 	background-color: lightblue;
 	width: 1000px;
 	margin: auto;
@@ -30,6 +32,7 @@ body {
 #userlist {
 	grid-area: a;
 	background-color: lightblue;
+	border-radius: 25px;
 	color: black;
 	text-align: center;
 }
